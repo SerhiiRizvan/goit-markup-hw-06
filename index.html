@@ -259,7 +259,7 @@
                     </ul>
             </div>
         </section>
-                                        <!-- Клиенты -->
+                                <!-- Клиенты -->
         <section class="clients">
             <div class="container">
                 <h2 class="clients-title">Постоянные клиенты</h2>
@@ -364,6 +364,7 @@
             </div>
         </div>
     </footer>
+                                <!-- Модалка -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-close" data-modal-close>
@@ -371,14 +372,18 @@
                     <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
             </button>
+                                <!-- Форма -->
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
             <form action="#">
-                <label for=""> Имя
-                    <input type="text" class="form-input">
-                    <input type="text" class="form-input">
-                    <input type="text" class="form-input">
-                    <input type="text" class="form-input">
-                </label>
+                <label class="form-label" for="user-name">Имя</label>
+                <input type="text" class="form-input" name="user-name" required minlength="5" id="user-name"> 
+                <label class="form-label" for="user-email">Телефон</label>
+                <input type="email" class="form-input" name="user-email" id="user-email">    
+                <label class="form-label" for="user-tel">Почта</label>
+                <input type="tel" class="form-input" name="user-tel" id="user-tel" title="+380(96)111-11-11">
+                <label class="form-label" for="user-comment">Комментарий</label>
+                <input type="text" class="form-input" id="user-comment" placeholder="Введите текст">
+                <button type="submit" class="button form-button">Отправить</button>
             </form>
         </div>
     </div>
